@@ -38,7 +38,7 @@
   "devDependencies": {
     "angular-mocks": "^1.5.9",
     "angular-ui-router-default":"0.0.6",
-    "babel-cli":"^6.18.10",
+    "babel-cli":"^6.18.0",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-plugin-transform-runtime": "^6.15.0",
