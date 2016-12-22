@@ -17,7 +17,7 @@ exports.config = {
     browserName: 'chrome'
   },
 
-  // Optional
+  // // Optional
   // seleniumAddress: 'http://localhost:4444/wd/hub',
 
   baseUrl: 'http://localhost:8080',
