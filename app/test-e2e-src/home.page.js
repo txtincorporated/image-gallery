@@ -1,8 +1,8 @@
 export default class HomePage {
   constructor() {
 
-    const nav = element.all(by.css('button'));
-    this.imgsButton = nav.get(2);
+    const nav = element.all(by.css('#images'));
+    this.imgsButton = nav.get(0);
 
     this.uiView = element(by.css('ui-view'));
 
