@@ -1,13 +1,23 @@
+<div class="sidebar">
+  <sidebar>
+    <div>
+      <albums></albums>
+    </div>
+
+  </sidebar>
+
+</div>
+
 <article>
   <h1>Welcome to the Kingdom of Kuddle</h1>
 
   <section>
-    <div>
-      <button ui-sref="welcome" ui-sref-active="active">Home</button>
-      <button ui-sref="bunnies" ui-sref-active="active">Bunnies</button>
-      <button ui-sref="about" ui-sref-active="active">About</button>  
+    <section>
+      <button id="welcome" ui-sref="welcome" ui-sref-active="active">Home</button>
+      <button id="images" ui-sref="images" ui-sref-active="active">Images</button>
+      <button id="about" ui-sref="about" ui-sref-active="active">About</button>  
 
-    </div>
+    </section>
 
     <div>
       <ui-view></ui-view>
