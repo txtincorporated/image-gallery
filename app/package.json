@@ -1,13 +1,17 @@
 {
   "name": "image-gallery",
   "version": "1.0.0",
-  "description": "cute bunny gallery",
+  "description": "image gallery",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "karma start --single-run",
     "test:watch": "karma start",
+    "update-webdriver": "webdriver-manager update",
+    "pree2e": "babel test-e2e-src --out-dir test-e2e",
+    "e2e": "protractor",
+    "e2eexplore": "protractor element-explorer",
     "start": "webpack-dev-server --inline",
     "build": "webpack"
   },
@@ -16,8 +20,7 @@
     "url": "git+https://github.com/txtincorporated/image-gallery.git"
   },
   "keywords": [
-    "cute",
-    "bunny",
+    "image",
     "gallery"
   ],
   "author": "Nathan P. Keene",
@@ -28,11 +31,15 @@
   "homepage": "https://github.com/txtincorporated/image-gallery#readme",
   "dependencies": {
     "angular": "^1.5.9",
+    "angular-animate": "^1.6.0",
+    "angular-resource": "^1.6.0",
     "angular-ui-router": "^1.0.0-beta.3",
     "camelcase": "^4.0.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.9",
+    "angular-ui-router-default": "0.0.6",
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-plugin-transform-runtime": "^6.15.0",
@@ -55,6 +62,7 @@
     "karma-webpack": "^1.8.0",
     "mocha": "^3.2.0",
     "node-sass": "^4.0.0",
+    "protractor": "^4.0.13",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
